@@ -4,7 +4,16 @@
 				while(have_posts()) 
 				{
 					the_post();
-					get_template_part( 'content', 'entry' );
+					if(category == selected-area)
+						{
+							get_template_part( 'content', 'area' );
+
+						}
+					else 
+					{
+
+						get_template_part( 'content', 'entry' );
+					}	
 				}	
 			?>
 		</div>
