@@ -410,6 +410,7 @@ label[for=s]
 
 .post-container
 {
+	display: none;
 	padding: 0.3rem;
 }
 
@@ -432,7 +433,7 @@ label[for=s]
 {
 	display: block;
 	width: 100%;
-	height: auto;
+	height:300px;
 }
 
 #post-list .post h2, #post-list .post span 
@@ -1546,6 +1547,20 @@ Genericons
 	{
 		margin: 0.05rem;
 	}
+}
+.Chheharta, .Ranjit_Avenue, .Gill_Road, .Dugri, .Mall_Road, .Chabal, .Patti {
+        display:none;
+}
+select#areas, select#city {
+text-align: center;
+width:200px;
+height:30px;
+border-radius:5px;
+background:#fff;
+
+}
+#areas {
+display:none;
 }
 
 

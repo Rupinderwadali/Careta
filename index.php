@@ -21,7 +21,7 @@
 
 <script type="text/javascript" language="javascript">
 
-        $("#city").change(function(){
+        $("#city") .change(function(){
                 var value= this.value;
                 $("#areas").empty();
                 $("#areas").css({"display":"inline-block"});

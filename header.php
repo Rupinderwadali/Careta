@@ -8,6 +8,9 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link href="<?php echo get_template_directory_uri(); ?>/genericons/genericons.css" rel="stylesheet">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+
 	<?php wp_head(); ?>
 </head>
 
