@@ -1,20 +1,32 @@
 		
 		<div id="post-list">
-			<?php
-				while(have_posts()) 
+		  <?php
+		    $terms = get_terms('area');
+                    foreach($terms as $term) :
+                    $posts = new WP_Query(array('area' => $term->slug));
+			if($posts->have_posts()) :
+			{
+			   while($posts->have_posts()) :
 				{
-					the_post();
-					if(category == selected-area)
-						{
-							get_template_part( 'content', 'area' );
+				  $posts->the_posts();
+				   {
 
-						}
-					else 
+					get_template_part('content', 'arealist' );
+				   }
+
+				}
+			}
+						
+			else
+			  {
+			    while(have_posts()) 
+				{
+				  the_post();
 					{
-
-						get_template_part( 'content', 'entry' );
+  					   get_template_part( 'content', 'entry' );
 					}	
-				}	
+				}
+			  }	
 			?>
 		</div>
 		
