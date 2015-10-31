@@ -43,25 +43,38 @@
                         $(".area").children().css({"display":"none"});
                 if(select == 'Chheharta'){
                         $(".Chheharta").css({"display": "block"});
-                }
+                	$("#all").css({"display": "none"});
+		}
                 else if(select == 'Ranjit_Avenue'){
                         $(".Ranjit_Avenue").css({"display":"block"});
-                }
+        		$("#all").css({"display": "none"});
+        
+		}
                 else if(select == 'Gill_Road'){
                         $(".Gill_Road").css({"display":"block"});
-                }
+               		$("#all").css({"display": "none"});
+
+		}
+
                 else if(select == 'Mall_Road'){
                         $(".Mall_Road").css({"display":"block"});
-                }
+                        $("#all").css({"display": "none"});
+
+		}
                 else if(select == 'Dugri'){
                         $(".Dugri").css({"display":"block"});
-		 }
+		        $("#all").css({"display": "none"});
+
+		}
                 else if(select == 'Patti'){
                         $(".Patti").css({"display":"block"});
-                }
+                        $("#all").css({"display": "none"});
+		}
                 else if(select == 'Chabal'){
                         $(".Chabal").css({"display":"block"});
-                }
+                        $("#all").css({"display": "none"});
+
+		}
         });
 </script>
 

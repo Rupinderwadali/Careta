@@ -1,34 +1,46 @@
-		
-		<div id="post-list">
-		  <?php
-		    $terms = get_terms('area');
-                    foreach($terms as $term) :
-                    $posts = new WP_Query(array('area' => $term->slug));
-			if($posts->have_posts()) :
-			{
-			   while($posts->have_posts()) :
-				{
-				  $posts->the_posts();
-				   {
+<div id="post-list">
+ <div id="all"> 
+   <?php
+     while(have_posts()) 
+	{
+	  the_post();
+	    {  
+  	      get_template_part( 'content', 'entry' );
+	    }	
+	} 
+    ?>
+  </div><!--all -->
+  <div id= "selected-area">
+    <?php
+     $terms = get_terms('area');
+     foreach($terms as $term) : ?>
+        <div class = "<?php echo $term->name ?>">
+                <?php
+		echo $term->slug;
+                $posts = new WP_Query(array('area' => $term->slug));
 
-					get_template_part('content', 'arealist' );
-				   }
+                if( $posts->have_posts() ):?>
+                <div class="room"></div>
+                <?php   while( $posts->have_posts() ) :
+                       $posts->the_post();?>
+                         <?php the_post_thumbnail();?>
 
-				}
-			}
-						
-			else
-			  {
-			    while(have_posts()) 
-				{
-				  the_post();
-					{
-  					   get_template_part( 'content', 'entry' );
-					}	
-				}
-			  }	
-			?>
-		</div>
+        <div class="post_title">
+                <a href ="<?php the_permalink();?>"><?php the_title();?></a>
+                </div>
+        <div class="btn1">
+                <input type="button" id="btnclick" value="Order" />
+        </div>
+                <?php
+                        endwhile;
+                endif;
+                ?>
+        </div><!-- Chheharta -->
+<?php
+endforeach; ?>
+
+  </div> <!--selected-area -->
+		</div><!--post-list -->
 		
 		<div id="post-navi">
 			<?php 
