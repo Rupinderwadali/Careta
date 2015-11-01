@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<div id="post">
 		<div class="post-content">
-		<?php while(have_posts()) : the_post(); ?>
+
 
 		<?php
 				$displayTags = (bool) get_theme_mod('careta_display_tags', true);
@@ -38,23 +38,7 @@
 				'previouspagelink' => __('Previous page', 'default'),
 			));
 		?>
-		
-		<?php if($displayTags && get_the_tags()) : ?>
-			<p>
-			<span class="genericon-small genericon-tag"></span>
-			<?php
-				echo _e('Tags','default') . "&nbsp;&nbsp;";
-				$posttags = get_the_tags();
-				if ($posttags) 
-				{
-					foreach($posttags as $tag) 
-					{
-						echo '<a href="' . get_tag_link($tag->term_id) . '" class="post-tags"  title="' . esc_attr( sprintf( __( "View all posts in %s" ,'default'), $tag->name ) ) . '">' . $tag->name . "</a>&nbsp;";
-					}
-				}
-			?>	
-			<p>			
-		<?php endif; ?>
+	
 		
 		<?php if($displayCategory && get_the_category()) : ?>
 			<p>
