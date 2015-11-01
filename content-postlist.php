@@ -16,9 +16,9 @@
      foreach($terms as $term) : ?>
         <div class = "<?php echo $term->name ?>">
                 <?php
-		echo $term->slug;
+	
                 $posts = new WP_Query(array('area' => $term->slug));
-
+		echo $term->slug;
                 if( $posts->have_posts() ):?>
                 <div class="room"></div>
                 <?php   while( $posts->have_posts() ) :
@@ -28,9 +28,7 @@
         <div class="post_title">
                 <a href ="<?php the_permalink();?>"><?php the_title();?></a>
                 </div>
-        <div class="btn1">
-                <input type="button" id="btnclick" value="Order" />
-        </div>
+       
                 <?php
                         endwhile;
                 endif;

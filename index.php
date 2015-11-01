@@ -40,7 +40,7 @@
         $("#areas").change(function(){
                 console.log("running");
         var select= this.value;
-                        $(".area").children().css({"display":"none"});
+                        $("#selected-area").children().css({"display":"none"});
                 if(select == 'Chheharta'){
                         $(".Chheharta").css({"display": "block"});
                 	$("#all").css({"display": "none"});
