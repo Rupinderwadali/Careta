@@ -1,14 +1,20 @@
+
+
 <?php get_header(); ?>
+
+
+
 <?php
-   $args = array('category_name' => 'blog');
-   $post_array = new WP_Query($args);
-	if($post_array->have_posts()):
-		while ($post_array->have_posts()) : 
-			$post_array->the_post();
-			the_post_thumbnail();
-		endwhile;
-	endif;
+  echo "Hello";
+  query_posts( array ( 'category_name' => 'blog', 'posts_per_page' => 4 ) );
+  while (have_posts()) : the_post();
+  the_post_thumbnail();
+  the_title();
+  the_content();
+endwhile;
 ?>
-	
-<?php get_footer(); ?>
+
+<?php get_sidebar();?>
+<?php get_footer();?>
+
 
