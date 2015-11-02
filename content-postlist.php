@@ -33,7 +33,7 @@
                         endwhile;
                 endif;
                 ?>
-        </div><!-- Chheharta -->
+        </div>
 <?php
 endforeach; ?>
 
