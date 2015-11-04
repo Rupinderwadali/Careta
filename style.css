@@ -168,8 +168,6 @@ a:active
 
 .social
 {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	clear:both;
@@ -1535,6 +1533,45 @@ Genericons
 }
 
 html, body,  #page, #post-list, .social , #main, .wrap{
+ background:#2e3438 !important;
+}
+#header .wrap .inner{
+ background:#2a903b !important;
+ width:70%;
+ margin-left:26.5%;
+}
+#header .wrap .inner #site-name {
+ float:left;
+ margin-right:50px;
+}
+#header .wrap .inner #menu ul{
+ float:left;
+}
+#header .wrap .inner #menu ul li{
+ clear:both;
+ font-weight:700;
+}
+#header .wrap .inner #menu ul li a{
+  position: relative;
+}
+#header .wrap .inner #menu ul li a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height:2px; 
+  background-color:#fff;
+  content: "";
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+#header .wrap .inner #menu ul li a:hover:after {
+  width: 100%;
+}
+
+#header .wrap {
  background:#2e3438 !important;
 }
 .Chheharta, .Ranjit_Avenue, .Gill_Road, .Dugri, .Mall_Road, .Chabal, .Patti {

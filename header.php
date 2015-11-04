@@ -27,10 +27,11 @@
 	<div id="header">
 		<div class="wrap">
 			<div class="inner">
+				<div id="site-name">
 				<a href="<?php echo home_url(); ?>" title="<?php echo str_replace('"', '\'', $blogTitle); ?>">
 					<div id="blog-title"> <?php if ($headerShowName) echo $blogTitle;?> &nbsp;</div>
 				</a>
-				
+				</div>
 				<?php if ($headerShowMenu) { ?>
 					<div id="menu">
 					<?php
