@@ -247,7 +247,7 @@ function careta_customize_register( $wp_customize )
 	$wp_customize->add_setting(
 		'careta_headerhover_color',
 		array(
-			'default'	=> '#DD3333',
+			'default'	=> '#fff',
 			'transport'	=> 'refresh',
 			'sanitize_callback' => 'careta_sanitize_string'
 		)
@@ -448,7 +448,7 @@ function careta_customize_register( $wp_customize )
 	$wp_customize->add_setting(
 		'careta_themeinfolink_color',
 		array(
-			'default'	=> '#DD3333',
+			'default'	=> '#fff',
 			'transport'	=> 'refresh',
 			'sanitize_callback' => 'careta_sanitize_string'
 		)
@@ -779,7 +779,7 @@ function careta_customize_register( $wp_customize )
 	$wp_customize->add_setting(
 		'careta_highlight_color',
 		array(
-			'default'	=> '#DD3333',
+			'default'	=> '#fff',
 			'transport'	=> 'refresh',
 			'sanitize_callback' => 'careta_sanitize_string'
 		)
@@ -970,7 +970,7 @@ function careta_customize_register( $wp_customize )
 	$wp_customize->add_setting(
 		'careta_postlink_color',
 		array(
-			'default'	=> '#DD3333',
+			'default'	=> '#fff',
 			'transport'	=> 'refresh',
 			'sanitize_callback' => 'careta_sanitize_string'
 		)
@@ -1176,7 +1176,7 @@ function careta_customize_register( $wp_customize )
 	$wp_customize->add_setting(
 		'careta_paginationbghover_color',
 		array(
-			'default'	=> '#DD3333',
+			'default'	=> '#fff',
 			'transport'	=> 'refresh',
 			'sanitize_callback' => 'careta_sanitize_string'
 		)
@@ -1597,12 +1597,12 @@ function careta_customize_css()
 	$textColor = get_theme_mod('careta_text_color', '#333333');
 	$textHoverColor = get_theme_mod('careta_text_hover_color', '#ffffff');
 	$postBgColor = get_theme_mod('careta_postbox_color', '#ffffff');
-	$highlightColor = get_theme_mod('careta_highlight_color', '#DD3333');
+	$highlightColor = get_theme_mod('careta_highlight_color', '#fff');
 	$thumbnailWidth = (int) get_option('thumbnail_size_w');
 	$thumbnailHeight = (int) get_option('thumbnail_size_h');
     
     $postTextColor = get_theme_mod('careta_posttext_color','#333333');
-	$postLinkColor = get_theme_mod('careta_postlink_color','#DD3333');
+	$postLinkColor = get_theme_mod('careta_postlink_color','#fff');
 	$postDetailsColor = get_theme_mod('careta_postdetails_color', '#e0e0e0');
 	
 	$style = get_theme_mod('careta_category_style','variable');
@@ -1616,11 +1616,11 @@ function careta_customize_css()
 	
 	$themeinfoColor = get_theme_mod('careta_themeinfo_color', '#4f4f4f');
 	$themeinfoBgColor = get_theme_mod('careta_themeinfobg_color', '#d8d8d8');
-	$themeinfoLinkColor = get_theme_mod('careta_themeinfolink_color', '#DD3333');
+	$themeinfoLinkColor = get_theme_mod('careta_themeinfolink_color', '#fff');
 	$themeinfoAlign = get_theme_mod('careta_themeinfoalign_text', 'left');
 	
 	$headerColor = get_theme_mod('careta_header_color', '#ffffff');
-	$headerColorHover = get_theme_mod('careta_headerhover_color', '#DD3333');
+	$headerColorHover = get_theme_mod('careta_headerhover_color', '#fff');
 	$headerBgColor = get_theme_mod('careta_headerbg_color', '#262626');
 	$headerTextAlign = get_theme_mod('careta_headeralign_text', 'left');
 	$headerImage = get_theme_mod('careta_header_image', '');
@@ -1631,7 +1631,7 @@ function careta_customize_css()
 	$paginationColor = get_theme_mod('careta_pagination_color', '#cecece');
 	$paginationBgColor = get_theme_mod('careta_paginationbg_color', '#4F4F4F');
 	$paginationHoverColor = get_theme_mod('careta_paginationhover_color', 'yellow');
-	$paginationBgHoverColor = get_theme_mod('careta_paginationbghover_color', '#DD3333');
+	$paginationBgHoverColor = get_theme_mod('careta_paginationbghover_color', '#fff');
 	
 	
 	$inputColor = get_theme_mod('careta_input_color', '#494949');

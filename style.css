@@ -79,7 +79,6 @@ html {
 body {
 	position: relative;
 	width: 100%;
-	text-align: center;
 	line-height: 1.4rem;
 }
 
@@ -349,14 +348,6 @@ label[for=s]
 
 /* post list */
 
-#post-list 
-{ 
-	overflow: hidden; 
-	word-wrap: break-word;
-	text-align: right;
-	vertical-align:top;
-}
-
 .post-entry
 {
 	width:23% !important;
@@ -369,22 +360,16 @@ label[for=s]
 
 #post-details
 {
-	text-align:right;
-	padding: 1rem;
-	font-size: 0.6em;
 }
 
 .home #post-list 
 { 
 	padding-top: 1rem; 
-	padding-left: 1rem;
 }
 
 .post 
 {
 	position: relative;
-	width: 100%;
-	margin: 0 0 2rem 0;
 	padding-bottom: .5rem;
 	-webkit-box-shadow: 1px 3px 0 rgba(0, 0, 0, .3);
 	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
@@ -1548,22 +1533,111 @@ Genericons
 		margin: 0.05rem;
 	}
 }
+
+html, body,  #page, #post-list, .social , #main, .wrap{
+ background:#2e3438 !important;
+}
 .Chheharta, .Ranjit_Avenue, .Gill_Road, .Dugri, .Mall_Road, .Chabal, .Patti {
         display:none;
 }
 select#areas, select#city {
-text-align: center;
-width:200px;
-height:30px;
-border-radius:5px;
-background-color:#2a903b;
+	width:200px;
+	height:30px;
+	border-radius:5px;
+	background-color:#2a903b;
 
 }
 #areas {
-display:none;
+	display:none;
 }
-img .attachment-post-thumbnail.wp-post-image {
-float :left;
+.select-boxes {
+	text-align:center;
+}
+#post-list{
+	height:360px;
+}
+.complete-post{
+ margin:15px 15px 15px 15px;
+ padding:0;
+ float:left;
+ overflow:hidden;
+ width:250px;
+ height:340px;
+ position:relative;
+}
+#post-list .complete-post:hover, #post-list .complete-post:hover a:hover, .mask:hover; 
+{ 
+ background: transparent;
+}
+img.attachment-post-thumbnail.wp-post-image{
+	-webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
+	-moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
+	box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, .3);
+}
+.mask, .content-text {
+	position:absolute;
+	overflow:hidden;
+	top:0;
+	left:0;
 }
 
+.mask-1, .mask-2 {
+    height: 600px;
+    width: 450px;
+    background: #31a344;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out 0.3s;
+    -moz-transition: all 0.5s ease-in-out 0.3s;
+    -o-transition: all 0.5s ease-in-out 0.3s;
+    transition: all 0.5s ease-in-out 0.3s;
 
+}
+
+.mask-1 {
+    top:0;
+    margin-top:-20%;
+    transform: rotate(-25deg) translate(469.5px);
+    transform-origin:0% 100%;
+}
+
+.mask-2 {
+    top:0;
+    margin-top:-20%;
+    transform: rotate(-25deg) translate(-380px);
+    transform-origin:0% 100%;
+}
+.complete-post:hover .mask-1, .complete-post:hover .mask-2 {
+    transition-delay: 0s;
+}
+.complete-post:hover .mask-1 {
+    transform: rotate(-25deg) translate(269.5px);
+}
+.complete-post:hover .mask-2 {
+    transform: rotate(-25deg) translate(-180px);
+}
+.content-text {
+   color:#fff;
+   opacity:0;
+   -webkit-transition: all 0.6s ease-in-out 0.3s;
+   -moz-transition: all 0.6s ease-in-out 0.3s;
+   -o-transition: all 0.6s ease-in-out 0.3s;
+   transition: all 0.6s ease-in-out 0.3s;
+  padding:30px 30px 0 30px;
+}
+.complete-post:hover .content-text {
+   opacity:1;
+}
+.content-text h1 {
+  font-size:24px;
+  font-weight:700;
+  margin:0;
+}
+a:hover {
+ color:#fff;
+}
+a{
+	color:#fff;
+}
+#footer {
+	margin-top:50px;
+}

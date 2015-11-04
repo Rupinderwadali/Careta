@@ -1,6 +1,7 @@
 <?php
 	get_header();?>
-	<select id = "city">
+<div class = "select-boxes">
+<select id = "city">
         <option value="none">Select City</option>
         <option value ="Amritsar" >Amritsar</option>
         <option value ="TarnTaran">Tarn_Taran</option>
@@ -8,6 +9,7 @@
 </select>
 <select id = "areas">
 </select>
+</div>
 	<?php
 	if(have_posts()) 
 	{
@@ -40,7 +42,7 @@
         $("#areas").change(function(){
                 console.log("running");
         var select= this.value;
-                        $("#selected-area").children().css({"display":"none"});
+                        $(".complete-post").css({"display":"none"});
                 if(select == 'Chheharta'){
                         $(".Chheharta").css({"display": "block"});
                 	$("#all").css({"display": "none"});
