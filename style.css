@@ -1672,9 +1672,31 @@ img.attachment-post-thumbnail.wp-post-image{
 a:hover {
  color:#fff;
 }
-a{
+.single-post {
+	text-align:center;
+	color:#fff;	
+}
+.single-post h1 {
+  color:#fff;
+  font-size:24px;
+  font-weight:700;
+}
+.buy-form input {
+	width:300px;
+}
+button.submit {
+	height:40px;
+	width:300px;
+	background:#2a903b;
 	color:#fff;
+	font-size:18px;
+	border:none;
+	padding:none;
 }
 #footer {
 	margin-top:50px;
 }
+html {
+	color:#fff !important;
+}
+
