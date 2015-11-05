@@ -11,7 +11,7 @@
 <?php// dynamic_sidebar('sidebar-footer'); ?>
 
 <?php 
-	$themeInfo = get_theme_mod('careta_themeinfo_text', 'Theme Careta by <a href="http://mcunha98.wordpress.com">MCunha98</a>');
+	$themeInfo = get_theme_mod('careta_themeinfo_text', 'BE ORGANIC</a>');
 	if (trim($themeInfo) != '')
 	{
 	?>

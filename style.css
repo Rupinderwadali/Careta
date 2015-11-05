@@ -168,6 +168,7 @@ a:active
 
 .social
 {
+	background:#fafafa;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	clear:both;
@@ -768,6 +769,7 @@ sup
 
 #themeinfo
 {
+	background-color:#fafafa;
 	padding:0.5rem;
 	font-size: .8rem;
 	height: 100%;
@@ -1684,7 +1686,7 @@ a:hover {
 .buy-form input {
 	width:300px;
 }
-button.submit {
+ #btnclick {
 	height:40px;
 	width:300px;
 	background:#2a903b;
@@ -1692,11 +1694,40 @@ button.submit {
 	font-size:18px;
 	border:none;
 	padding:none;
+	color:#2e3438 ;
 }
 #footer {
 	margin-top:50px;
 }
 html {
 	color:#fff !important;
+}
+#proj {
+	color:#fff;
+}
+#free {
+ 	width:100%;
+	height:100px;
+}
+#cont {
+	width:1050px;
+	text-align:justify;
+}
+#free1 {
+        width:100%;
+        height:50px;
+}
+#tit {
+	font-weight:bold;
+	font-size:30px;
+}
+#foto {
+	display:none;
+margin-left:auto;
+margin:right;
+}	
+.bbp-forum-content, .bbp-forum-info, .bbp-forum-topic-count, .bbp-forum-reply-count, .bbp-forum-freshness {
+	color:#2e3438;
+
 }
 

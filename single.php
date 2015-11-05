@@ -19,7 +19,7 @@
 
 			<h1><?php the_title(); ?></h1>
 			<?php the_post_thumbnail(); ?>
-			<?php  the_content(); ?>
+			<?php the_content(); ?>
 		
         	<?php endif; ?>
 		<div class="buy-form">
@@ -34,7 +34,9 @@
 			<span class="title">Address:</span><br>
 			<textarea rows="4" cols="30"></textarea>
 			<br>
-			<button type="submit" value="Submit" class="submit">Buy</button>
+			<div class="btn1">
+                        <input type="button" id="btnclick" value="Buy" />
+                        </div>
 
 </form>
 
@@ -44,3 +46,12 @@
 	
 
 <?php get_footer(); ?>
+<script type="text/javascript">
+$(function() {
+$("#btnclick").click(function() {
+var url = 'http://localhost/wordpress/index.php/place-order/';
+$(location).attr('href', url);
+})
+});
+</script>
+      
